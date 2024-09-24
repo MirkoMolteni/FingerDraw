@@ -6,8 +6,15 @@ import numpy as np
 mp_hands = mp.solutions.hands
 mp_drawing = mp.solutions.drawing_utils
 
+# Cerco le telecamere disponibili
+# for i in range(4):
+#     cap = cv2.VideoCapture(i)
+#     if cap.isOpened():
+#         print(f"La telecamera {i} è disponibile")
+#         cap.release()
+
 # Inizializzazione della videocamera
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 # Variabili per il disegno
 drawing = False
